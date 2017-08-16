@@ -1,0 +1,122 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Left & Right alignment */
+.left  {float:left}
+.right  {float:right}
+.wrapper {width:100%;overflow:hidden}
+.wrapper .pad_bot1 {font-size:14px; line-height:1.7em}
+/* Global properties ======================================================== */
+body {
+	border: 0;
+	font: 14px Arial, Helvetica, sans-serif;
+	color: #808080;
+	line-height: 24px;
+	min-width: 980px;
+	background-color: #fff;
+	background-image: url(../images/bg_top.jpg);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure ============================================================= */
+.main {margin:0 auto;	width:960px;position:relative}
+.bg1 {background:#e8e8e8}
+/* ============================= main layout ====================== */
+a {color:#073C4C;text-decoration:none;outline:none;}
+a:hover {color:#D0AF7C;text-decoration:underline;}
+h1 {padding:18px 0 0 9px;float:left}
+h2 {font-size:27px;color:#073C4C;font-weight:700;line-height:1.2em;padding:30px 0 11px 0;letter-spacing:-1px}
+.col1 h2 {font-size:18px}
+h3 {font-size:23px;color:#073C4C;font-weight:700;line-height:1.2em;padding:33px 0 17px 0;letter-spacing:-1px}
+h3.color1 {padding:0 0 7px 0}
+p {padding-bottom:24px}
+.minus {font-size:10px;font-weight:bold;}
+table {margin:0 auto 30px auto;}
+table.insc td {width:280px; padding:0 10px; font-size:11px; border:1px solid #999;}
+table.insc td figure {text-align:center;padding:0;margin:20px 0}
+/* ============================= header ====================== */
+header {height:179px}
+#page1 header {height:662px}
+#logo {display: block; text-indent: -9999px; width: 318px; height: 86px; background-image: url(../images/logo.png); background-repeat: no-repeat; background-position: 0 0;}
+#login {float:right;padding:50px 10px 0 0 }
+#login .bg {background:url(../images/search.png) 0 0 no-repeat;width:200px;height:23px;float:left; margin-top:-15px;}
+#login .bg2 {background:url(../images/search.png) 0 0 no-repeat;width:200px;height:23px;float:right; margin-top:10px;}
+#login .input {background:none;padding:3px 13px;font:14px Arial, Helvetica, sans-serif;color:#000;height:17px;width:194px;}
+#menu  {padding-top:10px}
+#menu > li  {float:left;padding-right:5px}
+#menu .last {padding-right:0px}
+#menu > li > a {width:188px;display:block;font-size:12px;color:#fff;text-transform:uppercase;font-weight:500;height:61px;line-height:58px;background:#6b6b6b;text-align:center;border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;position:relative}
+#menu > li > a:hover, #menu > .active > a {background:#073C4C;}
+#menu > li > a span {display:block;position:relative}
+#slider {position:absolute;top:209px;left:0;width:100%;height:453px;overflow:hidden;z-index:1}
+.items {display:none}
+.pagination {position:absolute;bottom:82px;right:274px;z-index:2}
+.pagination li {float:left;padding-left:3px}
+.pagination a {display:block;width:17px;height:17px;background:url(../images/buttons.png) right 0 no-repeat;text-indent:-9999px}
+.pagination a:hover, .pagination .current a {background-position:left}
+.banner {position:absolute;top:87px;z-index:2;right:32px;color:#a0a0a0;width:350px}
+.banner p {font-size:15px; color:#000; padding-bottom:14px}
+.title {font-size:48px;line-height:1.3em;letter-spacing:-2px;display:block;margin-bottom:-15px}
+.title .color2 {color:#000}
+.title span {display:block;margin-top:-17px}
+.banner_button1 {display:inline-block;font-size:24px;color:#fff;padding:0 18px;background:#073C4C;height:45px;line-height:44px;position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;letter-spacing:-1px;margin-top:-4px}
+.banner_button1:hover {background:#D0AF7C;color:#fff}
+.signature {text-align:center;display:inherit; color:#000;font-size:12px;line-height:20px;padding:10px 50px 30px 50px; margin:25px auto 0 auto;width:140px; border-top:1px solid #999;}
+.signature .logoegx {margin:3px 0 0 3px;height:19px;width:32px;background-image:url(../images/mini_logo_egx.png);background-position:center top; border:0 none;padding:0; float:right;}
+.signature .logoegx:hover {background-position:center bottom;}
+/* ============================= content ====================== */
+#content, #content2 {padding:0 20px}
+#content {padding-bottom:9px}
+#content2 {padding-bottom:21px}
+.pad_bot1 {padding-bottom:12px}
+.marg_right1 {margin-right:40px}
+.marg_right2 {margin-right:20px}
+.marg_right3 {margin:auto}
+.no_pad { padding-bottom:0}
+.color1 {color:#a3814f}
+.color2 {color:#073C4C}
+.button1 {display:inline-block;font-size:19px;color:#fff;padding:0 18px;background:#073C4C;height:45px;line-height:44px;position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;letter-spacing:-1px;margin-top:-4px}
+.button1:hover {background:#D0AF7C;color:#fff}
+.button1_sbac {display:inline-block;font-size:19px;color:#fff;padding:0 18px;background:#073C4C;height:45px;line-height:44px;position:relative; bottom:50px; right:20px; border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;letter-spacing:-1px;margin-top:-4px}
+.button1_sbac:hover {background:#999;color:#fff}
+.list1{}
+.list1 a {color:#073C4C;padding-left:15px;background:url(../images/marker_1.png) 0 5px no-repeat}
+.list1 a:hover {color:#073C4C}
+.list2{}
+.list2 li {padding-left:15px;background:url(../images/marker_1.png) 0 9px no-repeat;padding-bottom:12px}
+figure {padding-top:2px}
+.dropcap_1 {float:left;background:url(../images/dropcap_1.png) 0 0 no-repeat;width:45px;height:45px;text-align:center;font-size:33px;line-height:42px;color:#fff;font-weight:700;margin-right:15px;margin-top:2px;margin-bottom:10px}
+
+
+/* ============================= footer ====================== */
+footer  {padding:49px 20px 0;height:98px;margin-top:25px;}
+footer a {color:#808080}
+footer a:hover {color:#fff}
+.dicq_footer {font-weight:bold; font-size:11px;margin-top:-25px;}
+#icons {width:330px;float:right;margin-top:-25px}
+#icons li {float:left; margin-right:10px;}
+#icons .first {margin-right:50px;float:right;display:block;width:330px;text-align:right; font-size:14px;color:#999;font-weight:400;line-height:1.2em;margin-top:-15px;letter-spacing:-1px;padding-bottom:9px}
+li.logo_sbac a {display: block;width: 66px;height: 43px;background-image: url(../images/logo_sbac.jpg);background-repeat: no-repeat;background-position: center top;}
+li.logo_pncq a {display: block;width: 66px;height: 43px;background-image: url(../images/logo_pncq.jpg);background-repeat: no-repeat;background-position: center top;}
+li.logo_ona a {display: block;width: 66px;height: 43px;background-image: url(../images/logo_ona.jpg);background-repeat: no-repeat;background-position: center top;}
+li.logo_anvisa a {display: block;width: 66px;height: 43px;background-image: url(../images/logo_anvisa.jpg);background-repeat: no-repeat;background-position: center top;}
+
+/*Escondndo Logo anvisa*/
+li.logo_anvisa { display: none;}
+#icons { width: 260px;}
+
+#icons li a:hover {background-position:center bottom;}
+/* Tooltips */
+.aToolTip  {background:#073C4C;color:#fff;	margin:0;padding:2px 10px 3px;font-size:12px;line-height:1.2em;position:absolute}
+.aToolTip .aToolTipContent  {position:relative;	margin:0;padding:0}
+/* ============================= forms ============================= */
+#ContactForm {margin-top:-2px}
+#ContactForm .wrapper {overflow:inherit;min-height:30px;line-height:26px}
+#ContactForm .textarea_box {min-height:189px}
+#ContactForm  span {float:left;width:80px}
+#ContactForm a {margin-left:15px;float:right;width:124px;padding:0;text-align:center}
+#ContactForm .input  {margin:0;width:410px;height:18px;background:none;padding:4px 10px;color:#000;font:14px Arial, Helvetica, sans-serif}
+#ContactForm textarea  {overflow:auto;width:810px;height:160px;background:none;padding:4px 10px;color:#000;font:14px Arial, Helvetica, sans-serif;margin:0}
+#ContactForm  .bg {background:#dddddd; position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;float:left}
