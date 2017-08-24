@@ -1,8 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pousada ViaMar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+    
+    <!-- Deixar a letra como imagem - funciona no h2 -->    
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <script type="text/javascript" src="js/UltimaPDac_200.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
+    <script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.6.js"></script>
+    <script type="text/javascript" src="js/tms-0.3.js"></script>
+    <script type="text/javascript" src="js/tms_presets.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>Blah!2</p> 
+
+    <div id="interface">
+        <header id="cabecalho">
+            <img id="logo" src="imagens/logo.png" />
+            <hgroup>
+                <h1>Pousada ViaMar</h1>
+                <h2>O Paraíso existe, e está ao seu alcance!</h2>
+            </hgroup>
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pousada.html">A Pousada</a></li>
+                    <li><a href="acomodacoes.html">Acomodações</a></li>
+                    <li><a href="comochegar.html">Como Chegar</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo">
+            <!-- Apresentação das Imagens -->
+            <!--<div id="slider">
+                <ul class="items">
+                    <li>
+                        <img src="imagens/entrada_2.png" alt="">
+                        <div class="banner">
+                            <span class="title">Entrada da Pousada</span>
+                            <p>Onde você não vai quere mais sair</p>
+                            <a href="pousada.html" class="banner_button1">Leia Mais</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagens/cama_2.png" alt="">
+                        <div class="banner">
+                            <span class="title">Nossas Acomodações</span>
+                            <p>Sempre tudo bem limpo e cheiroso para você</p>
+                            <a href="Html/cursos.html" class="banner_button1">Leia Mais</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagens/cozinha_2.png" alt="">
+                        <div class="banner">
+                            <span class="title">Nossa Sala de Bem Estar</span>
+                            <p>Você vai se sentir em casa</p>
+                            <a target="_blank" href="pdfs/manual_dicq.pdf" class="banner_button1">Veja aqui</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>-->
+            <!-- Final da Apresentação -->
+
+
+
+            <article id="noticia-principal">
+                <div id="colunaEsq">
+
+                    ESQUERDA a partir enviar mensagens instantâneas e realizar vídeo conferências. testes 
+
+                </div>
+                <div id="colunaMeioDir">
+
+                    <div id="colunaMeio">
+                        MEIO fjsd klfd skdj oeioef jkf klf dslk
+                    </div>
+                    <div id="colunaDir">
+                        DIREITA djs fowe fjoijef wo fjeiwpof jewoiofe oiajd klaj fdlsk asd.
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <!--<aside id="colunaDir">
+
+            DIREITA djs fowe fjoijef wo fjeiwpof jewoiofe jajkJ j oiajd klaj fdlsk.
+
+        </aside>-->
+
+        <footer id="rodape">
+            Pousada Viamar - Rua do Sossego, 225 - Centro - Armação de Búzios - RJ<br />
+            CEP: 28925-000 - Telfax: (22) 2623-6507 / 2623-4972<br />
+
+            Copyright 2013 - by Breno Lourenço
+        </footer>
+
+    </div>
+
+    <script>
+        $(window).load(function(){
+            $('#slider')._TMS({
+                banners: true,
+                waitBannerAnimation: false,
+                preset:'diagonalFade',
+                easing:'easeOutQuad',
+                pagination: true,
+                duration: 400,
+                slideshow: 8000,
+                bannerShow:function(banner){
+                    banner.css({marginRight:-500}).stop().animate({marginRight:0}, 600)
+                },
+                bannerHide:function(banner){
+                    banner.stop().animate({marginRight:-500}, 600)
+                }
+            })
+        })
+    </script>
+
 </body>
 </html>
